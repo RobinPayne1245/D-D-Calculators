@@ -1,0 +1,22 @@
+price = 15
+DC = 15
+roll = 26
+item_value = price*10
+raw_cost = price*1/3
+challenge = DC*roll
+time = challenge/item_value
+fail = raw_cost*1/2
+if DC-3<roll<DC:
+    print("No progress made.")
+if roll<DC-4:
+    print("Lose " , fail , " silver.");
+    print("No progress made.")
+if 2>time>.9999999999:
+    print("Item Creation Successful.");
+    print("Time Taken: 1 Week")
+if 3>time>1.9999999999:
+    print("Item Creation Successful.");
+    print("Time Taken: 3.5 Days")
+if 4>time>2.9999999999:
+    print("Item Creation SUccessful.");
+    print("Time Taken: 2.33 Days")
